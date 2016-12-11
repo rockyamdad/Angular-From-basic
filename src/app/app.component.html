@@ -1,0 +1,20 @@
+<header>
+  <h1>{{title}}</h1>
+  <h3>nesting component</h3>
+    <div class="menu">
+        <a [routerLink]="['']">Home</a>
+        | <a [routerLink]="'/contact'">Contact</a>
+        | <a [routerLink]="'/courses'">Courses</a>
+
+    </div>
+</header>
+<section id="main">
+ <!--   <app-home [animal]="animals" (onListen) = "fire($event)">Test Purpose</app-home>-->
+
+    <div class="container row">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="sidebar row">
+        <router-outlet name="sidebar"></router-outlet>
+    </div>
+</section>

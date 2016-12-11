@@ -1,0 +1,31 @@
+<p>
+  home works!
+</p>
+<h3>Data Binding</h3>
+{{caption}}<br>
+
+<h3>ng Content Directive</h3>
+<ng-content></ng-content><br><br>
+
+<h3 >Property Binding</h3>
+<input [value]="header" /><br><br>
+<input [required]="privacy" #data/><br><br>
+
+<h3>Event Binding</h3>
+<button class="btn btn-primary" (click)="getMessage(data.value)">Click</button>
+
+<h3>Two way Binding</h3>
+
+<label>Name</label><input [(ngModel)] ="person.name"/>
+<label>Age</label><input [(ngModel)] ="person.age"/>
+<label>Hobby</label><input [(ngModel)] ="person.hobby"/>
+<p>{{person.name}}</p>
+<p>{{person.age}}</p>
+<p>{{person.hobby}}</p>
+
+<!--<h3>Custom Property Binding(& @input)</h3>
+<p>{{animal.name}}</p>
+<p>{{animal.type}}</p>-->
+
+<h3>Custom Event Binding (& @Output)</h3>
+<button (click)="workFire($event)">Hit me</button>

@@ -1,0 +1,32 @@
+<h2>Create New Contact</h2>
+<form #myForm="ngForm" >
+  <div>
+    <label>First Name:</label>
+    <input type="text" id="firstName"
+           ngModel
+     name="firstName" required
+
+    >
+    <span  >Not valid</span>
+  </div>
+  <div>
+    <label>Last Name:</label>
+    <input type="text" id="lastName"
+           ngModel
+    name="lastName" required
+    >
+  </div>
+  <div>
+    <label>Email:</label>
+    <input type="text" id="email"
+           ngModel
+           name="email" required>
+  </div>
+  <div>
+    <label>Phone:</label>
+    <input type="text" id="phone"
+           ngModel
+           name="phone" required>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
